@@ -44,10 +44,10 @@
 			<result name="success">/Register.jsp</result> 
 			<result name="error">/Register.jsp</result>
 		</action>
-		<action name="borrowBook" class="borrowBookAction">
+		<action name="borrowAndreturn" class="borrowAndreturnAction">
 			<result name="input">/WebPage/register/login.jsp</result>
-			<result name="success">/Register.jsp</result> 
-			<result name="error">/Register.jsp</result>
+			<result name="success">/WebPage/manage/manage.jsp</result> 
+			<result name="error">/WebPage/manage/manage.jsp</result>
 		</action>
 		<action name="delborrowBook" class="delborrowBookAction">
 			<result name="input">/WebPage/register/login.jsp</result>
@@ -66,12 +66,12 @@
 		</action>
 		<action name="userInfo" class="userInfoAction">
 			<result name="input">/WebPage/register/login.jsp</result>
-			<result name="success">/Register.jsp</result> 
-			<result name="error">/Register.jsp</result>
+			<result name="success">/WebPage/userinfo/userinfo.jsp</result> 
+			<result name="error">/WebPage/login/login.jsp</result>
 		</action>
 		 <action name="upLoad" class="uploadAction">  
-            <result name="success">/Success.jsp</result>  
-            <result name="error" >/fail.jsp</result>  
+            <result name="success">/WebPage/addNewBook/addNewBook.jsp</result>  
+            <result name="error" >/WebPage/addNewBook/addNewBook.jsp</result>  
             <result name="input" type ="redirect">/index.jsp</result>  
             <param name="maximumSize ">100000000</param>
             <param name="allowedTypes">

@@ -151,7 +151,7 @@
 			<ref bean="bookManager" />
 		</property>
 	</bean>
-	<bean id="borrowBookAction" class="com.LMS.ssh.action.borrowAction">
+	<bean id="borrowAndreturnAction" class="com.LMS.ssh.action.borrowAndreturnAction">
 		<property name="RecordManager">
 			<ref bean="RecordManager" />
 		</property>

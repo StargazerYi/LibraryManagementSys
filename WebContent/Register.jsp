@@ -31,15 +31,11 @@
 		<s:textfield name="book.bookAbstract" label="Astract"></s:textfield>
 		<s:submit value="添加" name = 'test2'></s:submit>
 	</s:form>
-	<s:form action="borrowBook">
+	<s:form action="borrowAndreturnAction">
 		<s:textfield name="record.bookId" label="书籍id"></s:textfield>
 		<s:textfield name="record.userId" label="Userid"><% if(session.getAttribute("userId")!= null) {out.print(session.getAttribute("userId"));} %></s:textfield>
-		<s:submit value="借书" name = 'test'></s:submit>
-	</s:form>
-	<s:form action="delborrowBook">
-		<s:textfield name="record.bookId" label="书籍id"></s:textfield>
-		<s:textfield name="record.userId" label="Userid"><% if(session.getAttribute("userId")!= null) {out.print(session.getAttribute("userId"));} %></s:textfield>
-		<s:submit value="del借书" name = 'test'></s:submit>
+		<s:textfield name="actionType" label ="借还书"></s:textfield>
+		<s:submit value="借还书" name = 'test'></s:submit>
 	</s:form>
 	<h1><br>${status}</br></h1>
 	<s:form action="reserveBook">
